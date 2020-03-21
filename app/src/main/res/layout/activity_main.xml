@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numbers_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="122dp" />
+
+    <Button
+        android:id="@+id/number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numbers_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/number_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numbers_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/number_1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/number_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numbers_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/number_2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/number_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_1"
+        android:layout_marginLeft="10dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/number_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/number_4"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/number_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/number_5"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/number_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_4"
+        android:layout_marginLeft="10dp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/number_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_5"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/number_7"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/number_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_6"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/number_8"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/number_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_8"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/number_7"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/action_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numbers_edittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/number_3"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/action_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_add"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/number_6"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/action_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_subtract"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/number_9"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/action_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_multiply"
+        android:layout_marginLeft="118dp"
+        android:layout_toRightOf="@id/number_0"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/action_decimal_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_7"
+        android:layout_marginLeft="10dp"
+        android:text="." />
+
+    <Button
+        android:id="@+id/action_equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_9"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/number_0"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/action_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/action_add"
+        android:layout_marginLeft="313dp"
+        android:text="C" />
+
+    <TextView
+        android:id="@+id/current_action_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/action_clear"
+        android:layout_toRightOf="@id/number_3"
+        />
+
+    <TextView
+        android:id="@+id/val1_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/current_action_textview"
+        android:layout_toRightOf="@id/number_3"
+        />
+
+
+</RelativeLayout>
